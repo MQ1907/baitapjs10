@@ -22,6 +22,20 @@ function addEmployee() {
   document.getElementById("timeWork").value = "";
 }
 
+document.getElementById("btnThem").onclick = () =>{
+  //Reset form
+  document.getElementById("account").value = "";
+  document.getElementById("name").value = "";
+  document.getElementById("email").value = "";
+  document.getElementById("password").value = "";
+  document.getElementById("dayWork").value = "";
+  document.getElementById("salary").value = "";
+  document.getElementById("chucvu").value = "";
+  document.getElementById("timeWork").value = "";
+
+  document.getElementById("account").disabled = false;
+}
+
 //Tìm kiếm nhân viên
 function searchEmployee() {
   let search = document.getElementById("searchName").value;
